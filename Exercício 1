@@ -1,0 +1,16 @@
+/* Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido. */
+
+
+console.log("Por favor, digite sua nota sobre o nosso atendimento.");
+console.log();
+
+let nota = +prompt("Digite sua nota")
+
+while(nota < 0 || nota > 10) {
+  console.log("ERRO!. Digite uma nota de 0 a 10");
+  nota = +prompt("Digite sua nota")
+}
+
+console.log()
+
+console.log("Obrigado pela sua nota!")
